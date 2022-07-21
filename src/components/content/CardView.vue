@@ -1,12 +1,12 @@
 <template>
     <section>
-        <div class="card">
+        <div class="card" :key="post">
             <div class="card-title">
-                <h3>Post 1</h3>
+                <h3>{{post.title}}</h3>
             </div>
             <hr>
             <div class="card-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat obcaecati vel sed adipisci facilis eligendi sequi, sint eos, iste, voluptatum cupiditate praesentium velit. Ut harum quis beatae aliquam, alias eligendi!</p>
+                <p>{{post.comment}}</p>
                 <button-view namebtn="Buy Now" />
             </div>
         </div>
@@ -20,8 +20,9 @@ export default {
         "button-view": Button,
     },
     props: {
-        
-    }
+        post: Object,
+    },
+
 }
 </script>
 

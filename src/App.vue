@@ -1,6 +1,6 @@
 <template>
   <nav-view />
-  <content-view />
+  <content-view :post= "allposts"/>
   <footer-view />
 </template>
 
@@ -14,7 +14,8 @@ export default {
     "nav-view": Nav,
     "content-view": Content,
     "footer-view": Footer,
-  }
+  },
+
 }
 </script>
 

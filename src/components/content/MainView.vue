@@ -1,19 +1,31 @@
 <template>
     <div class="main">
-        <card-view />
-        <card-view />
-        <card-view />
+        <card-view v-for="post of posts" :key="post" :post="post" />
+
     </div>
 </template>
 
 <script>
 import Card from './CardView.vue'
+import axios from "axios"
 export default {
     components: {
         "card-view": Card,
     },
     props: {
-        // msg: String
+    },
+    data() {
+        return {
+            posts: [],
+        }
+    },
+    methods: {
+        
+    },
+    mounted() {
+        axios.get('http://127.0.0.1:81/api/posts').then(res=> {
+        this.posts = res.data;
+        })
     }
 }
 </script>

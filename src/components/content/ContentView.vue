@@ -13,9 +13,7 @@ export default {
         "main-view": Main,
         "sidebar-view": Sidebar,
     },
-    props: {
-        // msg: String
-    }
+
 }
 </script>
 

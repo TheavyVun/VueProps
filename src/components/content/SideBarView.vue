@@ -10,9 +10,7 @@ export default {
     components: {
         "form-view": Form,
     },
-    props: {
-        // msg: String
-    }
+
 }
 </script>
 

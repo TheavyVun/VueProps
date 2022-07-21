@@ -13,9 +13,7 @@ export default {
         "footer-left": FooterLeft,
         "footer-right": FooterRight,
     },
-    props: {
-        // msg: String
-    }
+
 }
 </script>
 

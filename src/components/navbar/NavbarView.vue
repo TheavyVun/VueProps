@@ -15,8 +15,7 @@ export default {
     components: {
         "list-view": List,
     },
-    props: {
-    },
+
 
 }
 </script>

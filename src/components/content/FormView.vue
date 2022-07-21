@@ -14,9 +14,7 @@ export default {
         "input-view": Input,
         "button-view": Button,
     },
-    props: {
-        msg: String
-    }
+
 }
 </script>
 
