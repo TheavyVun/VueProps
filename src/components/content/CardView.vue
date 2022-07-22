@@ -35,6 +35,9 @@ export default {
         border-top: 4px solid rgb(230, 23, 23);
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
     }
+    .card:hover {
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
 
     h3 {
         margin: 0;
