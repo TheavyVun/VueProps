@@ -1,8 +1,8 @@
 <template>
     <form action="">
-        <input-view sms="email" />
-        <input-view sms="password" />
-        <button-view namebtn="Login" />
+        <input-view typeinput="email" sms="email" />
+        <input-view typeinput="password" sms="password" />
+        <button-view  namebtn="Login" />
     </form>
 </template>
 
@@ -18,7 +18,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .btn {
         background: blue;

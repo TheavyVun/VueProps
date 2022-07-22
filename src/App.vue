@@ -1,6 +1,6 @@
 <template>
   <nav-view />
-  <content-view :post= "allposts"/>
+  <content-view />
   <footer-view />
 </template>
 

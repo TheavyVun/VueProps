@@ -1,13 +1,11 @@
 <template>
     <div class="main">
         <card-view v-for="post of posts" :key="post" :post="post" />
-
     </div>
 </template>
 
 <script>
 import Card from './CardView.vue'
-import axios from "axios"
 export default {
     components: {
         "card-view": Card,
@@ -16,21 +14,17 @@ export default {
     },
     data() {
         return {
-            posts: [],
+            posts: [
+                {title: "Post 1", description: "Lorem ipsum dolor sit amet consectetue adipisicing elit. Magnam, nats."},
+                {title: "Post 1", description: "Lorem ipsum dolor sit amet consectetue adipisicing elit. Magnam, nats."},
+                {title: "Post 1", description: "Lorem ipsum dolor sit amet consectetue adipisicing elit. Magnam, nats."},
+            ],
         }
     },
-    methods: {
-        
-    },
-    mounted() {
-        axios.get('http://127.0.0.1:81/api/posts').then(res=> {
-        this.posts = res.data;
-        })
-    }
+
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
     .main {
         width: 70%;

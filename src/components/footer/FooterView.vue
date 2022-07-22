@@ -17,12 +17,12 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
     footer {
         display: flex;
         background: rgb(192, 34, 34);
         text-align: center;
+
     }
     
 </style>

@@ -1,16 +1,16 @@
 <template>
-    <input type="text" class="formcontrol" :key="sms" :placeholder="sms">
+    <input :type="typeinput" class="formcontrol" :placeholder="sms">
 </template>
 
 <script>
 export default {
   props: {
-    sms: String
+    sms: String,
+    typeinput: String
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
     .formcontrol {
         width: 100%;

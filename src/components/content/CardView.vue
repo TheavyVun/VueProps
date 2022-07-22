@@ -6,7 +6,7 @@
             </div>
             <hr>
             <div class="card-body">
-                <p>{{post.comment}}</p>
+                <p>{{post.description}}</p>
                 <button-view namebtn="Buy Now" />
             </div>
         </div>
@@ -26,9 +26,9 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
     .card {
+        width: 100%;
         padding: 20px;
         border-radius: 8px;
         margin-bottom: 20px;
