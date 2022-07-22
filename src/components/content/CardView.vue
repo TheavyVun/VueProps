@@ -33,9 +33,16 @@ export default {
         border-radius: 8px;
         margin-bottom: 20px;
         border-top: 4px solid rgb(230, 23, 23);
-        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
     }
+
     h3 {
         margin: 0;
+    }
+    .btn {
+        background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    }
+    .btn:hover {
+        background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
     }
 </style>

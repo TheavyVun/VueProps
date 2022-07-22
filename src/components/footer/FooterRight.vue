@@ -11,7 +11,7 @@ export default {
 <style>
     .footer-right {
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         border-left: 1px dotted;
     }
 </style>
